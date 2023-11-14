@@ -32,7 +32,6 @@
                 <input type="text" name="nom" placeholder="Votre nom">
                 <label for="prenom">Prénom :</label>
                 <input type="text" name="prenom" placeholder="Votre prénom">
-                <form method="get" action="">
                     <p>
                         Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br>
                         <input type="radio" name="age" value="moins15" id="moins15"> <label for="moins15">Moins de 15 ans</label><br>
@@ -40,6 +39,14 @@
                         <input type="radio" name="age" value="medium25-40" id="medium25-40"> <label for="medium25-40">25-40 ans</label><br>
                         <input type="radio" name="age" value="plus40" id="plus40"> <label for="plus40">Plus de 40 ans</label>
                     </p>
+                        <p>
+                            <label for="pays">De quelle nationalité êtes-vous ?</label><br>
+                            <select name="pays" id="pays">
+                                <option value="espagne">Française</option>
+                                <option value="royaume-uni">Autre</option>
+                            </select>
+                        </p>
+                    </form>
                 </form>
                 <label for="email">Email :</label>
                 <input type="email" name="email" placeholder="Votre email">
