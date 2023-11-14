@@ -1,0 +1,59 @@
+body{
+    background: rgb(248,235,180);
+    background: radial-gradient(circle, rgba(248,235,180,1) 47%, rgba(221,186,112,1) 74%, rgba(122,107,64,1) 87%);
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    width: 70%;
+    height: auto;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: stretch;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    margin-top: 5%;
+    background: rgb(122,107,64);
+    background: rgb(122,107,64);
+    background: radial-gradient(circle, rgba(122,107,64,1) 0%, rgba(221,186,112,1) 35%, rgba(248,211,121,1) 50%, rgba(248,235,180,1) 83%, rgba(154,129,94,1) 100%, rgba(73,64,36,1) 100%);
+}
+.Description{
+    background-color: rgb(223, 194, 128);
+    font-style: italic;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(54, 42, 21);
+}
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left:10%;
+    text-align: left;
+    color: black;
+}
+h1 {
+    background: rgb(122,107,64);
+    background: radial-gradient(circle, rgba(122,107,64,1) 0%, rgba(221,186,112,1) 35%, rgba(248,211,121,1) 50%, rgba(248,235,180,1) 83%, rgba(154,129,94,1) 100%, rgba(73,64,36,1) 100%);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: black;
+}
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left:10%;
+    text-align: left;
+    color: black;
+}
+.Emplacement {
+    color: rgb(72, 61, 31);
+}
+.Arrondissement {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(118, 114, 104);
+}
