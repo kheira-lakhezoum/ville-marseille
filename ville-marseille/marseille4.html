@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*-----Pop-up-----*/
+        .overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.7);
+            transition: opacity 500ms;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .overlay:target {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .popup {
+            margin: 70px auto;
+            padding: 20px;
+            background: linear-gradient(20deg, #99D4C0, #DBD46A);
+            border-radius: 5px;
+            width: 40%;
+            position: relative;
+            transition: all 5s ease-in-out;
+        }
+
+        .popup h2 {
+            margin-top: 0;
+            color: #333;
+            font-family: Tahoma, Arial, sans-serif;
+        }
+
+        .popup .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            transition: all 200ms;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .popup .close:hover {
+            color: #06D85F;
+        }
+
+        .popup .content {
+            max-height: 30%;
+            overflow: auto;
+        }
+        /*--------fin du pop-up--------*/
+
+    </style>
+</head>
+<body>
+    <h1>Les plages</h1>
+    <main>
+        <section>   <!--_________intro_________-->
+            <p>
+                Les plages de Marseille, joyaux méditerranéens baignés par le doux soleil de la Provence, 
+                offrent un cadre exceptionnel où la nature et l'urbanité se rencontrent harmonieusement. 
+                Située sur la côte sud de la France, Marseille se distingue par ses plages pittoresques 
+                qui invitent les visiteurs à se détendre et à savourer la beauté envoûtante de la Méditerranée.
+            </p>
+
+            <p>
+                Ce qui rend les plages de Marseille particulièrement uniques, c'est le privilège rare d'assister au coucher de soleil au-dessus de la mer. 
+                En effet, Marseille est la seule ville de France où l'astre solaire achève sa course quotidienne dans une symphonie de couleurs flamboyantes, 
+                se fondant délicatement dans les eaux scintillantes de la Méditerranée. Cette caractéristique distinctive confère aux plages marseillaises une atmosphère magique, 
+                transformant chaque soir en un spectacle inoubliable où le ciel se pare de teintes chaudes et chatoyantes.
+            </p>
+
+            <p>
+                Que ce soit sur la plage des Catalans, la Corniche Kennedy ou les calanques environnantes, 
+                les visiteurs de Marseille sont bercés par le murmure des vagues et enchantés par la vue imprenable sur le soleil qui disparaît lentement à l'horizon. 
+                Les plages de Marseille ne sont pas seulement des étendues de sable, mais des toiles vivantes où la nature et le cosmos s'entrelacent, offrant une expérience sensorielle incomparable.
+            </p>
+
+        </section>
+
+        <section> <!--________liste des plage//deux colonnes_______-->
+
+            <ul>    <!--________plages surveillées_______-->
+                <h2>15 zones réservées à la baignade surveillée</h2>
+                <h3>Surveillance de 9h30 à 19h sauf mention contraire</h3>
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup1">Corbière Fortin</a>
+                    </div>
+                    <div id="popup1" class="overlay">
+                        <h2>Corbière Fortin</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            Dans le quartier mythique de l’Estaque se trouvent les seules plages des quartiers Nord. Un ensemble de trois plages qui se suivent après l’Estaque. 
+                            L’avantage de ces plages est qu’elles sont propres même en été, faciles d’accès, suffisamment grandes et avec une vue magnifique sur tout Marseille.
+                        </p>
+
+                        <p>
+                            Entre deux bains, n’hésitez pas à aller faire un tour du côté du village de l’Estaque. Véritable source d’inspiration pour de nombreux artistes, 
+                            peintres et écrivains, il a également servi de cadre au film « Marius et Jeannette » de Robert Guédiguian. 
+                            L’Estaque a su conserver son authenticité de village provençal qui lui vaut sa renommée dans le monde entier maintenant.</p>
+                        
+                        <p>
+                            Arrêtez vous un instant sur le port pour y déguster les fameux Chichis Frégis, ou les panisses. 
+                            Enfin poussez la porte d’un des nombreux restaurants pour y découvrir toutes les saveurs de ce quartier unique de Marseille. 
+                            Le port est également le lieu de rendez vous de tous les amateurs de voile, c’est également un port maritime très réputé.
+                        </p>
+                        
+                        <p>
+                            Les trois plages qui composent le site sont toutes fréquentées par des familles et sont donc très conviviales. 
+                            Ce sont également les plages où l’on trouve l’eau la plus limpide à Marseille. 
+                            des espaces sont aménagés pour y faire des piques nique et des grillades sans risques.
+                        </p>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup2">Corbière Batterie</a>
+                    </div>
+                    <div id="popup2" class="overlay">
+                        <h2>Corbière Batterie</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            Dans le quartier mythique de l’Estaque se trouvent les seules plages des quartiers Nord. Un ensemble de trois plages qui se suivent après l’Estaque. 
+                            L’avantage de ces plages est qu’elles sont propres même en été, faciles d’accès, suffisamment grandes et avec une vue magnifique sur tout Marseille.
+                        </p>
+
+                        <p>
+                            Entre deux bains, n’hésitez pas à aller faire un tour du côté du village de l’Estaque. Véritable source d’inspiration pour de nombreux artistes, 
+                            peintres et écrivains, il a également servi de cadre au film « Marius et Jeannette » de Robert Guédiguian. 
+                            L’Estaque a su conserver son authenticité de village provençal qui lui vaut sa renommée dans le monde entier maintenant.</p>
+                        
+                        <p>
+                            Arrêtez vous un instant sur le port pour y déguster les fameux Chichis Frégis, ou les panisses. 
+                            Enfin poussez la porte d’un des nombreux restaurants pour y découvrir toutes les saveurs de ce quartier unique de Marseille. 
+                            Le port est également le lieu de rendez vous de tous les amateurs de voile, c’est également un port maritime très réputé.
+                        </p>
+                        
+                        <p>
+                            Les trois plages qui composent le site sont toutes fréquentées par des familles et sont donc très conviviales. 
+                            Ce sont également les plages où l’on trouve l’eau la plus limpide à Marseille. 
+                            des espaces sont aménagés pour y faire des piques nique et des grillades sans risques.
+                        </p>
+                        
+
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup3">Corbière La Lave</a>
+                    </div>
+                    <div id="popup3" class="overlay">
+                        <h2>Corbière La Lave</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            Dans le quartier mythique de l’Estaque se trouvent les seules plages des quartiers Nord. Un ensemble de trois plages qui se suivent après l’Estaque. 
+                            L’avantage de ces plages est qu’elles sont propres même en été, faciles d’accès, suffisamment grandes et avec une vue magnifique sur tout Marseille.
+                        </p>
+
+                        <p>
+                            Entre deux bains, n’hésitez pas à aller faire un tour du côté du village de l’Estaque. Véritable source d’inspiration pour de nombreux artistes, 
+                            peintres et écrivains, il a également servi de cadre au film « Marius et Jeannette » de Robert Guédiguian. 
+                            L’Estaque a su conserver son authenticité de village provençal qui lui vaut sa renommée dans le monde entier maintenant.</p>
+                        
+                        <p>
+                            Arrêtez vous un instant sur le port pour y déguster les fameux Chichis Frégis, ou les panisses. 
+                            Enfin poussez la porte d’un des nombreux restaurants pour y découvrir toutes les saveurs de ce quartier unique de Marseille. 
+                            Le port est également le lieu de rendez vous de tous les amateurs de voile, c’est également un port maritime très réputé.
+                        </p>
+                        
+                        <p>
+                            Les trois plages qui composent le site sont toutes fréquentées par des familles et sont donc très conviviales. 
+                            Ce sont également les plages où l’on trouve l’eau la plus limpide à Marseille. 
+                            des espaces sont aménagés pour y faire des piques nique et des grillades sans risques.
+                        </p>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup4">Frioul St Estève  (surveillée de 10h à 18h)</a>
+                    </div>
+                    <div id="popup4" class="overlay">
+                        <h2>Frioul St Estève</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            La plage de St Estève sur l’ile de Frioul se situe sur l’ile de Ratonneau à proximité de l’hôpital Caroline. 
+                            Unique plage de l’ile surveillée en été, elle est très fréquentée. L’environnement est très agréable avec une vue sur la rade de Marseille. 
+                            La plage est assez petite (mais grande pour l’ile …). Elle est divisée en deux zones, la partie de droite est en gravillon. 
+                            En saison, on trouve sur le bord un restaurant avec une agréable terrasse.
+                        </p>
+
+                        <p>
+                            Pour vous rendre sur cette plage en sortant du port prendre sur la gauche en direction de l’hôpital Caroline (des panneaux donnent la direction). 
+                            Il faut compter 20 minutes de marche. Il est également possible d’emprunter le petit train qui vous dépose au niveau de cette plage.
+                        </p>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup5">Les Catalans  (surveillée de 10h à 19h30)</a>
+                    </div>
+                    <div id="popup5" class="overlay">
+                        <h2>Les Catalans</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            C’est LA plage la plus accessible quand on se trouve dans le centre de Marseille. Ce n’est pas la plus belle, ni celle qui a l’eau la plus bleue, 
+                            mais elle est à 15 minutes à pied du Vieux Port et est idéale pour aller piquer une tête à l’improviste.
+                        </p>
+                        
+                        <p>N’hésitez pas à dépasser les eaux et les foules stagnantes du bord pour profiter des eaux plus profondes, moins fréquentées et plus propres. 
+                            La plage des Catalans est également connue pour ses terrains de Beach Volley qui attirent joueurs et spectateurs tout au long de l’année. 
+                            Vous pourrez flâner en regardant les parties endiablées en vous asseyant sur les bancs situés plus haut.
+                        </p>
+
+                        <p>
+                            Alors bien sûr, le principal atout de cette plage est également son pire défaut. 
+                            L’accessibilité exige de venir tôt pour pouvoir espérer poser sa serviette. N’espérez pas la tranquillité, les enfants, 
+                            les adolescents sont aussi nombreux que bruyants, les bandes de jeunes qui sillonnent les plages l’été, en ont fait une de leurs étapes incontournables. 
+                            Tout comme les touristes et tant d’autres. Résultat, l’animation est toujours garantie, le calme impossible. Mais c’est aussi ça Marseille, 
+                            et qu’une plage soit dans le ventre bouillonnant du centre-ville c’est déjà bien, pour ceux qui cherchent plus, 
+                            il suffit d’aller plus loin sur l’une des autres plages de Marseille.
+                        </p>
+                        <p>
+                            Mais la plage des Catalans est aussi le lieu idéal pour organiser des soirées sur la plage. 
+                            Qui n’aime pas les pique-niques sur la plage en été, lorsque la chaleur retombe. 
+                            Vous pourrez également choisir un restaurant sur la plage pour finir la soirée dans un bar ou en discothèque !
+                        </p>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup6">Prophète</a>
+                    </div>
+                    <div id="popup6" class="overlay">
+                        <h2>Prophète</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            Sur la Corniche Kennedy, en contrebas de la route se trouve la plage du Prophète, l’une des plus anciennes plages de Marseille et l’une des plus populaires aussi. 
+                            Littéralement prise d’assaut l’été venu, elle fait la joie des plus petits comme des plus grands.
+                        </p>
+                        <p>
+                            La pente de la mer étant très douce, on a pied assez loin, et les enfants adorent. 
+                            Un terrain de Beach Volley attend les plus téméraires, tandis que le site comporte toutes les commodités, 
+                            poste de secours, douches, snacks et buvettes.
+                        </p>
+                        <p>
+                            Ce lieu est très prisé par les familles et les habitués du matin, 
+                            avant de se transformer l’après midi en un lieu de rendez-vous pour tous les marseillais d’ici et d’ailleurs.
+                        </p>
+                        <p>
+                            Pique-niques et apéros, le soir les jeunes viennent de tous les quartiers de la ville et improvisent des soirées au clair de lune
+                             au son de djumbés qui ne manquent jamais de résonner les soirs d’été. Du coup la plage peut receler de nombreux mégots, 
+                             ce qui peut être un peu rebutant.
+                        </p>
+                        <p>
+                        Ce n’est pas la plage la plus propre de Marseille, ni celle où l’on vient pour trouver une eau turquoise. On vient au Prophète pour la convivialité, 
+                        les journées et les soirées entre amis, pour taquiner un peu le ballon de volley avant de plonger dans une contemplation des jolies marseillaises 
+                        venues des quatre coins de la ville. C’est la plage de l’été, pour ses journées comme pour ses soirées.
+                        </p>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup7">Prado Nord (Petit Roucas)</a>
+                    </div>
+                    <div id="popup7" class="overlay">
+                        <h2>Prado Nord (Petit Roucas)</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            Crées dans les années 70 pour aménager les kilomètres de littoral inexploités, 
+                            les plages du Prado sont aujourd’hui devenues un lieu incontournable pour de nombreux marseillais et touristes. 
+                            Les travaux du métro de l’époque produisant le remblais nécessaire à l’aménagement des 22 hectares pris sur la mer. 
+                            Au final, le parc balnéaire du Prado s’étend sur 26 hectares et 3.5 kilomètres de littoral et est fréquenté par plus de 3,5 millions de visiteurs par an.
+                        </p>
+                        <p>
+                            C’est la plus grande plage de Marseille, même si on pourrait plus parler d’une succession de plages sur des kilomètres entre celle du David 
+                            (ainsi nommée à cause de la statue éponyme), à la Vieille Chapelle. Chaque coin attire un public plus ou moins différent, 
+                            mais l’essentiel est constitué d’habitués, de familles, et de plus jeunes.
+                        </p>
+                        <p>                        
+                            Les immenses pelouses qui encadrent la mer sont le paradis des footeux du dimanche, des enfants comme des plus grands, 
+                            ravis de pouvoir profiter d’un vaste espace de verdure à deux pas de la mer. Attention, car l’endroit est pris d’assaut l’été, 
+                            étant le plus facile d’accès par les transports. Mais il est possible de trouver des coins plus tranquilles que d’autres. 
+                            N’hésitez pas à vous balader un peu avant de poser votre serviette pour la journée. Le Skatepark ou Bowl est reconnu dans le monde entier, 
+                            et les amateurs de glisse s’y pressent en pèlerinage.
+                        </p>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup8">Prado Nord (Grand Roucas)</a>
+                    </div>
+                    <div id="popup8" class="overlay">
+                        <h2>Prado Nord (Grand Roucas)</h2>
+                        <a class="close" href="#">&times;</a>
+
+                        <p>
+                            Crées dans les années 70 pour aménager les kilomètres de littoral inexploités, 
+                            les plages du Prado sont aujourd’hui devenues un lieu incontournable pour de nombreux marseillais et touristes. 
+                            Les travaux du métro de l’époque produisant le remblais nécessaire à l’aménagement des 22 hectares pris sur la mer. 
+                            Au final, le parc balnéaire du Prado s’étend sur 26 hectares et 3.5 kilomètres de littoral et est fréquenté par plus de 3,5 millions de visiteurs par an.
+                        </p>
+                        <p>
+                            C’est la plus grande plage de Marseille, même si on pourrait plus parler d’une succession de plages sur des kilomètres entre celle du David 
+                            (ainsi nommée à cause de la statue éponyme), à la Vieille Chapelle. Chaque coin attire un public plus ou moins différent, 
+                            mais l’essentiel est constitué d’habitués, de familles, et de plus jeunes.
+                        </p>
+                        <p>                        
+                            Les immenses pelouses qui encadrent la mer sont le paradis des footeux du dimanche, des enfants comme des plus grands, 
+                            ravis de pouvoir profiter d’un vaste espace de verdure à deux pas de la mer. Attention, car l’endroit est pris d’assaut l’été, 
+                            étant le plus facile d’accès par les transports. Mais il est possible de trouver des coins plus tranquilles que d’autres. 
+                            N’hésitez pas à vous balader un peu avant de poser votre serviette pour la journée. Le Skatepark ou Bowl est reconnu dans le monde entier, 
+                            et les amateurs de glisse s’y pressent en pèlerinage.
+                        </p>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup9">Prado Sud</a>
+                    </div>
+                    <div id="popup9" class="overlay">
+                        <h2>Prado Sud</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            Crées dans les années 70 pour aménager les kilomètres de littoral inexploités, 
+                            les plages du Prado sont aujourd’hui devenues un lieu incontournable pour de nombreux marseillais et touristes. 
+                            Les travaux du métro de l’époque produisant le remblais nécessaire à l’aménagement des 22 hectares pris sur la mer. 
+                            Au final, le parc balnéaire du Prado s’étend sur 26 hectares et 3.5 kilomètres de littoral et est fréquenté par plus de 3,5 millions de visiteurs par an.
+                        </p>
+                        <p>
+                            C’est la plus grande plage de Marseille, même si on pourrait plus parler d’une succession de plages sur des kilomètres entre celle du David 
+                            (ainsi nommée à cause de la statue éponyme), à la Vieille Chapelle. Chaque coin attire un public plus ou moins différent, 
+                            mais l’essentiel est constitué d’habitués, de familles, et de plus jeunes.
+                        </p>
+                        <p>                        
+                            Les immenses pelouses qui encadrent la mer sont le paradis des footeux du dimanche, des enfants comme des plus grands, 
+                            ravis de pouvoir profiter d’un vaste espace de verdure à deux pas de la mer. Attention, car l’endroit est pris d’assaut l’été, 
+                            étant le plus facile d’accès par les transports. Mais il est possible de trouver des coins plus tranquilles que d’autres. 
+                            N’hésitez pas à vous balader un peu avant de poser votre serviette pour la journée. Le Skatepark ou Bowl est reconnu dans le monde entier, 
+                            et les amateurs de glisse s’y pressent en pèlerinage.
+                        </p>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup10">Huveaune (David)</a>
+                    </div>
+                    <div id="popup10" class="overlay">
+                        <h2>Huveaune (David)</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            Crées dans les années 70 pour aménager les kilomètres de littoral inexploités, 
+                            les plages du Prado sont aujourd’hui devenues un lieu incontournable pour de nombreux marseillais et touristes. 
+                            Les travaux du métro de l’époque produisant le remblais nécessaire à l’aménagement des 22 hectares pris sur la mer. 
+                            Au final, le parc balnéaire du Prado s’étend sur 26 hectares et 3.5 kilomètres de littoral et est fréquenté par plus de 3,5 millions de visiteurs par an.
+                        </p>
+                        <p>
+                            C’est la plus grande plage de Marseille, même si on pourrait plus parler d’une succession de plages sur des kilomètres entre celle du David 
+                            (ainsi nommée à cause de la statue éponyme), à la Vieille Chapelle. Chaque coin attire un public plus ou moins différent, 
+                            mais l’essentiel est constitué d’habitués, de familles, et de plus jeunes.
+                        </p>
+                        <p>                        
+                            Les immenses pelouses qui encadrent la mer sont le paradis des footeux du dimanche, des enfants comme des plus grands, 
+                            ravis de pouvoir profiter d’un vaste espace de verdure à deux pas de la mer. Attention, car l’endroit est pris d’assaut l’été, 
+                            étant le plus facile d’accès par les transports. Mais il est possible de trouver des coins plus tranquilles que d’autres. 
+                            N’hésitez pas à vous balader un peu avant de poser votre serviette pour la journée. Le Skatepark ou Bowl est reconnu dans le monde entier, 
+                            et les amateurs de glisse s’y pressent en pèlerinage.
+                        </p>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup11">Borély</a>
+                    </div>
+                    <div id="popup11" class="overlay">
+                        <h2>Borély</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            Crées dans les années 70 pour aménager les kilomètres de littoral inexploités, 
+                            les plages du Prado sont aujourd’hui devenues un lieu incontournable pour de nombreux marseillais et touristes. 
+                            Les travaux du métro de l’époque produisant le remblais nécessaire à l’aménagement des 22 hectares pris sur la mer. 
+                            Au final, le parc balnéaire du Prado s’étend sur 26 hectares et 3.5 kilomètres de littoral et est fréquenté par plus de 3,5 millions de visiteurs par an.
+                        </p>
+                        <p>
+                            C’est la plus grande plage de Marseille, même si on pourrait plus parler d’une succession de plages sur des kilomètres entre celle du David 
+                            (ainsi nommée à cause de la statue éponyme), à la Vieille Chapelle. Chaque coin attire un public plus ou moins différent, 
+                            mais l’essentiel est constitué d’habitués, de familles, et de plus jeunes.
+                        </p>
+                        <p>                        
+                            Les immenses pelouses qui encadrent la mer sont le paradis des footeux du dimanche, des enfants comme des plus grands, 
+                            ravis de pouvoir profiter d’un vaste espace de verdure à deux pas de la mer. Attention, car l’endroit est pris d’assaut l’été, 
+                            étant le plus facile d’accès par les transports. Mais il est possible de trouver des coins plus tranquilles que d’autres. 
+                            N’hésitez pas à vous balader un peu avant de poser votre serviette pour la journée. Le Skatepark ou Bowl est reconnu dans le monde entier, 
+                            et les amateurs de glisse s’y pressent en pèlerinage.
+                        </p>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup12">Bonneveine</a>
+                    </div>
+                    <div id="popup12" class="overlay">
+                        <h2>Bonneveine</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            Crées dans les années 70 pour aménager les kilomètres de littoral inexploités, 
+                            les plages du Prado sont aujourd’hui devenues un lieu incontournable pour de nombreux marseillais et touristes. 
+                            Les travaux du métro de l’époque produisant le remblais nécessaire à l’aménagement des 22 hectares pris sur la mer. 
+                            Au final, le parc balnéaire du Prado s’étend sur 26 hectares et 3.5 kilomètres de littoral et est fréquenté par plus de 3,5 millions de visiteurs par an.
+                        </p>
+                        <p>
+                            C’est la plus grande plage de Marseille, même si on pourrait plus parler d’une succession de plages sur des kilomètres entre celle du David 
+                            (ainsi nommée à cause de la statue éponyme), à la Vieille Chapelle. Chaque coin attire un public plus ou moins différent, 
+                            mais l’essentiel est constitué d’habitués, de familles, et de plus jeunes.
+                        </p>
+                        <p>                        
+                            Les immenses pelouses qui encadrent la mer sont le paradis des footeux du dimanche, des enfants comme des plus grands, 
+                            ravis de pouvoir profiter d’un vaste espace de verdure à deux pas de la mer. Attention, car l’endroit est pris d’assaut l’été, 
+                            étant le plus facile d’accès par les transports. Mais il est possible de trouver des coins plus tranquilles que d’autres. 
+                            N’hésitez pas à vous balader un peu avant de poser votre serviette pour la journée. Le Skatepark ou Bowl est reconnu dans le monde entier, 
+                            et les amateurs de glisse s’y pressent en pèlerinage.
+                        </p>
+
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup13">Vieille-Chapelle</a>
+                    </div>
+                    <div id="popup13" class="overlay">
+                        <h2>Vieille-Chapelle</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            Crées dans les années 70 pour aménager les kilomètres de littoral inexploités, 
+                            les plages du Prado sont aujourd’hui devenues un lieu incontournable pour de nombreux marseillais et touristes. 
+                            Les travaux du métro de l’époque produisant le remblais nécessaire à l’aménagement des 22 hectares pris sur la mer. 
+                            Au final, le parc balnéaire du Prado s’étend sur 26 hectares et 3.5 kilomètres de littoral et est fréquenté par plus de 3,5 millions de visiteurs par an.
+                        </p>
+                        <p>
+                            C’est la plus grande plage de Marseille, même si on pourrait plus parler d’une succession de plages sur des kilomètres entre celle du David 
+                            (ainsi nommée à cause de la statue éponyme), à la Vieille Chapelle. Chaque coin attire un public plus ou moins différent, 
+                            mais l’essentiel est constitué d’habitués, de familles, et de plus jeunes.
+                        </p>
+                        <p>                        
+                            Les immenses pelouses qui encadrent la mer sont le paradis des footeux du dimanche, des enfants comme des plus grands, 
+                            ravis de pouvoir profiter d’un vaste espace de verdure à deux pas de la mer. Attention, car l’endroit est pris d’assaut l’été, 
+                            étant le plus facile d’accès par les transports. Mais il est possible de trouver des coins plus tranquilles que d’autres. 
+                            N’hésitez pas à vous balader un peu avant de poser votre serviette pour la journée. Le Skatepark ou Bowl est reconnu dans le monde entier, 
+                            et les amateurs de glisse s’y pressent en pèlerinage.
+                        </p>
+
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup14">Pointe-Rouge</a>
+                    </div>
+                    <div id="popup14" class="overlay">
+                        <h2>Pointe-Rouge</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            Juste après le parc balnéaire du Prado se trouve la Pointe Rouge. A proximité du petit port du même nom, 
+                            qui propose de nombreuses activités nautiques comme la voile, plongée, aviron, kayak, se trouve la plage.
+                        </p>
+                        <p>
+                            C’est la plus grande plage de Marseille, constituée de sable, elle est protégée des vents et reçoit un public familial populaire. 
+                            En bordure se trouvent de nombreux restaurants, bars, pubs qui assurent le ravitaillement et l’ambiance. 
+                            En été, la surveillance de la baignade est également assurée.
+                        </p>
+                        <p>
+                        Attention ce petit endroit du bout du monde est très fréquenté durant la saison estivale, et peut se transformer en piscine noire de monde. Vous voila prévenus !
+                        </p>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup15">Sormiou (surveillée de 11h10 à 18h30)</a>
+                    </div>
+                    <div id="popup15" class="overlay">
+                        <h2>Sormiou</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            Si vous êtes à Marseille et que vous souhaitez vous couper du monde, ne plus entendre le bruit de la ville et découvrir un paysage enchanteur, 
+                            allez faire un tour sur la plage de la calanque de Sormiou.
+                        </p>
+                        <p>
+                            On y accède via le quartier des Baumettes, au sud de la ville en empruntant le col de Sormiou et sa petite route sinueuse qui descend
+                            directement vers la calanque. L'été, la descente est plus compliquée parce qu'interdite aux voitures, 
+                            elle se fait à pied tout comme la remontée ! Mais quel plaisir de se poser sur cette petite plage de sable fin, 
+                            ne plus entendre aucun bruit de voiture mais uniquement le clapotis de l'eau turquoise et les voix des enfants qui jouent au bord de l'eau.
+                        </p>
+                        <p>
+                        La plage de la calanque de Sormiou est également est un très bon point de départ pour découvrir les calanques en kayak.longueur de 200 mètres. 
+                        Un petit port de plaisance, des cabanons, un restaurant de cuisine traditionnelle et provençale ainsi qu'un centre sportif UCPA l'occupent. 
+                        Le parking est obligatoire et payant : 5 EUR. La plage est équipée de toilettes.
+                        </p>
+                        <p>
+                            En ce qui concerne les plages, les équipes de surveillance sont présentes depuis le 1 3 juin au 3 septembre 2023, 7 jours sur 7 de 11h10-18h30.<br>
+                            4 toilettes sont situés sur le parking sont ouverts non-stop. ( cabines WC chimiques)<br>
+                            Cette calanque est désormais comprise dans le Parc National des Calanques.<br>
+
+                            Parking public
+                        </p>
+
+                    </div>
+                </li>
+
+            
+            <ul>    <!--________plages non surveillées_______-->
+                <h2>zones non surveillées</h2>
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup16">Anse des Sablettes (Colombet)</a>
+                    </div>
+                    <div id="popup16" class="overlay">
+                        <h2>Anse des Sablettes (Colombet)</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            La plage de l’anse des Sablettes surnommée aussi de Colombet de par le Boulevard qui vous mènera, 
+                            est discrètement nichée sur la route des Goudes entre les plages des Phocéens et de la Verrerie. Très agréable et pourtant peu connue, 
+                            cette plage de sable reste une adresse d’initiés et de locaux, animée le week-end et certains soirs autour des cabanons familiaux à volets 
+                            bleus creusés dans la roche. On peut encore ressentir ici ce qui fait le charme et l’âme de Marseille…simplicité, 
+                            authenticité et un panorama exceptionnel !
+                        </p>
+
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup17">Les Goudes (La Maronnaise)</a>
+                    </div>
+                    <div id="popup17" class="overlay">
+                        <h2>Les Goudes (La Maronnaise)</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            La petite plage de la Maronaise est située dans l’anse du même nom, juste avant le Cap Croisette, entre les Goudes et à deux pas de la Baie des Singes.
+                            Autrefois, l’Anse de la Maronaise était connue pour la présence de sa discothèque, aujourd’hui détruite suite à l’application de la loi Littoral en 2010. 
+                            Pour vous y rendre, l’anse est peu accessible en bus : seul le bus 20 vous déposera à proximité. En voiture, 
+                            il vous faudra prendre la route sinueuse qui part des Goudes et qui mène à la Baie des Singes. Pour vous garer, 
+                            vous pouvez vous rendre au parking gratuit situé entre Les Goudes et Callelongue.
+                        </p>
+                        <p>
+                            Il vous faudra vous y rendre de bonne heure pour avoir une place pendant la période estivale. Si la route passe à proximité de la plage, 
+                            le lieu reste à la fois sauvage, calme et agréable. Autre point positif, surtout connue des marseillais, 
+                            cette plage de sable et de petits graviers reste assez peu bondée, surtout en été. 
+                            Elle est encore peu connue des touristes et vous ne devriez pas avoir de mal à trouver une place pour votre serviette. 
+                            Bordée de rochers, vous pourrez vous y réfugier pour y trouver un peu de fraîcheur et de tranquillité les jours d’affluence. 
+                            La crique attire les familles locales qui souhaitent se baigner à Marseille mais c’est aussi le spot des pêcheurs sous-marins !*
+                        </p>
+                        <p>
+                            Avis aux amateurs de plongée, vous pourrez apercevoir les membrures de la « mahonne », un chaland arrondi qui gît depuis plus de 50 ans
+                            sur les fonds marins, juste à l’entrée de l’anse. C’est également à lui que l’on doit le nom de l’anse. Pour les amoureux de la nature, 
+                            sachez qu’il y pousse durant les mois d’octobre et de novembre l’Erica Multiflora : une espèce singulière de bruyère.
+                        </p>
+                        <p>
+                            Pensez également à la location de bateaux, lors de votre week-end à Marseille. Vous pourrez ainsi découvrir plus facilement les plages de Marseille 
+                            et pourquoi pas vous arrêter déjeuner dans un des restaurants sur la plage.
+                        </p>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup18">Calanque de Morgiou</a>
+                    </div>
+                    <div id="popup18" class="overlay">
+                        <h2>Calanque de Morgiou</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            Etroite, profonde et secrète elle reste accessible à pied en 1 heure de marche environ depuis le massif de Luminy. 
+                            On y accède en voiture par un col vertigineux, digne d‘un col de montagne. 
+                            Il convient de s’assurer des conditions d’accès dans les calanques avant de vous lancer, car la règlementation est très stricte surtout en été. <br> 
+                            On peut aussi visiter les calanques par la mer avec les navettes au départ du Vieux-Port de Marseille. 
+                        </p>
+                        <p>
+                            Une petite plage de galets offre un accès facile à l'eau fraîche et cristalline de la calanque. 
+                            Cependant, trouver de la place pour sa serviette peut être difficile, et il peut être nécessaire de marcher un peu pour trouver un rocher accueillant 
+                            pour se baigner. L'eau des calanques est réputée plus froide en raison de sources souterraines, du mistral ou du relief sous-marin.
+                        </p>
+                        <p>
+                            Le sentier de randonnée GR98-51 traverse la calanque, offrant une belle balade vers celle de Sugiton à l'est en environ 45 minutes. 
+                            Le chemin est marqué par des rochers glissants dus à la fréquentation des randonneurs, nécessitant des chaussures de randonnée. 
+                            Les voies d'escalade au-dessus attirent les grimpeurs.
+                        </p>
+                        <p>
+                            Le même sentier mène vers le Col du Renard à l'ouest, en direction du cap Morgiou, rejoignant le sentier des crêtes. 
+                            Une balade facile conduit à l'impressionnante anse de la Triperie avec ses parois verticales. La montée offre une vue panoramique sur les calanques, 
+                            le Devenson, et les falaises rouges du Cap Canaille à Cassis. C'est un endroit préservé pour les goélands et les corneilles des falaises.
+                        </p>
+
+                    </div>
+                </li>
+               
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup19">Bain des Dames</a>
+                    </div>
+                    <div id="popup19" class="overlay">
+                        <h2>Bain des Dames</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            L’Anse du Bain des Dames est la première des quatre plages de sable, en enfilade du Quartier de Montredon, en arrivant de la Pointe Rouge. 
+                            Pourquoi le bain “des Dames” ? car ceux “des hommes”, dît des Phocéens se sont installés sur l’anse d’à côté dès 1858 à une époque où on ne 
+                            se mélangeait pas !
+                        </p>
+                        <p>
+                            La plage du Bain des Dames, le long de la route et moins cachée que d'autres, offre un charme authentique avec ses cabanons familiaux, 
+                            anciens abris pour les bateaux des pêcheurs. Divisée en trois parties, la section de gauche, la plus grande et fréquentée, 
+                            présente une plage de sable et de gravillons. Elle comporte une dalle de béton surmontée d'une longue bâtisse aux volets bleus, 
+                            offrant tout le nécessaire pour que les familles puissent déjeuner et dîner en profitant de la vue sur la mer.
+                        </p>
+
+                    </div>
+                </li>
+               
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup20">Anse des Phocéens</a>
+                    </div>
+                    <div id="popup20" class="overlay">
+                        <h2>Anse des Phocéens</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            Comme il est de tradition à Montredon, ses petites plages arborent souvent plusieurs appellations selon la génération du baigneur qui la fréquente ! 
+                            Ici au bout du bien nommé Boulevard des Baigneurs se trouve la petite plage de sable de l’Anse des Phocéens, 
+                            également appelée un temps le Bain des Hommes, puis chez Marius ou encore l’Abri Côtier…aujourd’hui ? on dit aussi « Chez Paulette » !
+                        </p>
+                        <p>
+                            Nichée entre entre les plages du Bain des Dames et l’Anse des Sablettes cette très agréable petite anse reste une adresse de locaux et d’initiés 
+                            (de plus en plus nombreux, trop selon les locaux !), animée le week-end et certains soirs autour d’une paillotte et des cabanons familiaux creusés 
+                            dans la grande parois rocheuse. Cette plage doit un de ses noms aux bains de mer Phocéens ouvert en 1858 et exclusivement dédiés aux hommes, 
+                            alors qu’à côté se trouvait la plage réservée aux femmes, le Bain des Dames.
+                        </p>
+
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup21">Bonne Brise (Verrerie)</a>
+                    </div>
+                    <div id="popup21" class="overlay">
+                        <h2>Bonne Brise (Verrerie)</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            Dans le quartier populaire de Montredon, se cache une de ces dernières plages authentiques et familiales marseillaises, accessible par un étonnant et discret passage au travers d’immeubles d’habitation. Son nom ?  Elle en porte plusieurs, selon l’âge des riverains et leur relation affectueuse avec ce petit bout de sable bordé de cabanons de bric et de broc…
+                        </p>
+                        <p>
+                            Officiellement ici c’est « Bonne Brise », pour d’autre « à Dédé » en mémoire de sa mythique pizzeria fermée en 2011 et éliminée en 2013 par la loi littorale…un autre nom résonne parfois, « de la Verrerie ». Car justement, ce sable, ce territoire en regorgeait. A deux pas, fut construit dès 1823 la verrerie Pons-Grimblot spécialisée dans le verre à vitre et reliée à la mer par un tunnel passant sous le chemin de la Madrague.
+                        </p>
+                        <p>
+                            Si vous venez en voiture (attention aux légendaires bouchons du retour des calanques du dimanche après-midi), on peut se garer relativement facilement au pied du City Stadium de la Verrerie (le stade avec le plus beau panorama de Marseille !) sur l’avenue de la Madrague de Montredon, sur un grand parking mal entretenu et souvent sale mais à la vue splendide
+                        </p>
+
+                    </div>
+                </li>
+               
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup22">Morgiret (Frioul)</a>
+                    </div>
+                    <div id="popup22" class="overlay">
+                        <h2>Morgiret (Frioul)</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            La plage est très facile d’accès, le temps de marche est de moins de 10 minutes. A la sortie de la gare maritime, il faut emprunter le large sentier qui mène en direction de la Calanque Sainte-Estève et l’hôpital Caroline. </p>
+                        <p>
+                            Sur la gauche, après le bloc de sanitaires, dont une partie n’accessible qu’en été, il y a une faille dans la roche. Il faut la traverser et ainsi on débouche sur la calanque. </p>
+                        <p>
+                            C’est une large plage de galets et en réalité son nom est celui de la calanque de la Courale. En provençal « couralo » signifie le cœur, le centre. Et cette dénomination correspond bien à cette calanque qui s’enfonce profondément au cœur de l’île de Ratonneau. Cette position géographique lui offre également une bonne protection par vent d’Est. L’ensemble de cette baie s’appelle en revanche « Havre de Morgeret ». Ce nom « Morgeret » ou « Morgiret » à un lien avec le préfixe « mor » qui signifie « hauteur ». Et ici effectivement au sud il y a un plateau élevé qui protèges les criques. On retrouve également cette racine de hauteur dans le nom de la calanque de Morgiou. </p>
+                        <p>
+                            En fin de journée elle est un spot idéal pour observer le coucher de soleil.</p>
+
+                        <p>
+                            La plage n’offre aucun espace ombragé et n’est pas surveillée.
+                        </p>
+                        <p>
+                            L’accès au Frioul se fait par une navette bateau qui part depuis le Vieux Port, quai des Belges (quai de la Fraternité)</p>
+                        </p>
+
+                    </div>
+                </li>
+               
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup23">En Vau</a>
+                    </div>
+                    <div id="popup23" class="overlay">
+                        <h2>En Vau</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            Elle est la récompense, après la randonnée ou l’ascension d’une voie, pour se reposer, pique-niquer ou se baigner. On se croit au bout du monde ! Mais elle est aussi très prisée des familles et des groupes, et selon notre heure d’arrivée on aura du mal à y poser sa serviette. 
+                        </p>
+                        <p>
+                            Elle est couverte de galets : attention aux pieds sensibles ! Son eau fraîche, comme partout ailleurs dans les calanques peut surprendre. Elle donne envie de nager au-dessus des fonds clairs et des herbiers de posidonie, plantes aquatiques fleuries qui abritent des poissons et qui donnent à l’eau cette belle couleur indigo.
+                        </p>
+                        <p>
+                            Il n’y a pas d’ombre dans la calanque quand le soleil est au zénith : du printemps à l’automne il est conseillé de se protéger du soleil avec un chapeau, des lunettes de soleil et de la crème solaire. Il n’y a aucun point d’eau en chemin : il faut prévoir une quantité suffisante.
+                        </p>
+
+                    </div>
+                </li>
+               
+                <li>
+                    <div class="box">
+                        <a class="button"href="#popup24">Port Pin</a>
+                    </div>
+                    <div id="popup24" class="overlay">
+                        <h2>Port Pin</h2>
+                        <a class="close" href="#">&times;</a>
+                        <p>
+                            Port Pin est la plus petite des trois calanques près de Cassis. C'est elle qui offre le paysage le plus doux, avec ses pinèdes qui descendent jusqu'au ras de l'eau et sa plage de sable.
+                        </p>
+                        <p>
+                            La doit son nom aux pins d’Alep, très présents dans le massif. Elle est comprise dans le Parc National des Calanques, sur le territoire marseillais. C'est la dernière calanque de Marseille, la plus à l'Est.
+Elle est traversée par le chemin de grande randonnée GR98-51 : les marcheurs l’atteignent en 45 minutes environ depuis le parking de la Presqu’île (payant).
+                        </p>
+                        <p>
+                            Entre le 1er juin et le 30 septembre l’accès aux massifs forestiers est réglementé par arrêté préfectoral et peut l’être par arrêté municipal, pour votre sécurité et la préservation des sites sensibles. Avant de suivre vos «envies de balade», appelez le 0811 20 13 13. Chaque jour, vous pourrez savoir si le site où vous souhaitez vous promener est d’accès libre toute la journée, ouvert uniquement le matin, ou bien complètement fermé. En fonction des conditions météorologiques le niveau de danger «feu de forêt» (orange-rouge-noir) est connu au plus tard à 18h pour le lendemain.
+                        </p>
+
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section> <!--_________autres?_________-->
+
+        </section>
+    </main>
+</body>
+</html>
