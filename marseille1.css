@@ -1,8 +1,14 @@
 .fond-image{
-    background-repeat: no-repeat;
-    filter:opacity(40%);
-    
-    
+    position: fixed;
+    filter: opacity(10%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fond-image img{
+    height: 100vh;
 }
 
 h1{
@@ -17,7 +23,6 @@ h2{
     font-size: large;
     text-decoration: none;
     text-align: center;
-
 }
 
 p{

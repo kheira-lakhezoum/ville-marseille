@@ -31,3 +31,16 @@ p{
 ul{
     color: rgb(0, 0, 0);
 }
+
+
+.pics{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10%;
+    padding: 20px 10px;
+    
+}
