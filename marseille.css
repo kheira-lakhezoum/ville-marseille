@@ -23,6 +23,7 @@ body
     bottom: 0;
     z-index: -1;
 }
+/* style du titre*/
 header
 
 {
@@ -54,6 +55,7 @@ padding-left: 40%;
     font-size: 4rem;
     font-weight: 800;
 }
+/* fin du style du titre*/
 main
   {
     position: relative;
@@ -144,6 +146,8 @@ main
     color: #2faee0;
 }
 /* fin du menu dropdown */
+
+
 
 /*en test debut du footer*/
 
