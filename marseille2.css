@@ -3,6 +3,9 @@ body{
     background: rgb(248,235,180);
     background: radial-gradient(circle, rgba(248,235,180,1) 47%, rgba(221,186,112,1) 74%, rgba(122,107,64,1) 87%);
 }
+footer{
+    background-color: rgb(255, 255, 255);
+}
 .imgmusée {
     display: block;
     margin-left: auto;
@@ -28,6 +31,7 @@ body{
     background-color: rgb(223, 194, 128);
     font-style: italic;
     display: block;
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
     color: rgb(54, 42, 21);
