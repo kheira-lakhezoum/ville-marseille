@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body
+{
+    background: url();
+    background-size: cover;
+}
+.menu_bar
+{
+    background: #0a6daa;
+    text-align: left;
+}
+.menu_bar ul
+{
+
+    position: relative;
+    list-style: none ;
+
+}
+.menu_bar ul li
+{
+
+    width: 130px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center
+}
+.menu_bar ul li a 
+{
+
+    color: white;
+    text-decoration: none;
+}
+.active, .menu_bar ul li:hover
+{
+
+    background: #2faee0;
+    border-radius: 5px;
+}
+.background_patrimoine
+{
+    background: #d8956a;
+
+}
+.background_environnement
+{
+
+    background: #37392e;
+}
+.drop_down
+{
+
+    display: none;
+}
+.menu_bar ul li:hover .drop_down
+{
+    display: block;
+    position: absolute;
+    border-radius: 0;
+    margin-left: -15px;
+    margin-top: 15px;
+    background: #0a6daa;
+
+}
+.menu_bar ul li:hover .drop_down ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu_bar ul li:hover .drop_down ul li
+{
+    width: 160px;
+    padding: 10px;
+    border-bottom: 1px dotted #2faee0;
+    border-radius: 0;
+    text-align: left;
+}
+.menu_bar ul li:hover .drop_down ul li:last-child
+{
+
+    border-bottom: none;
+}
+.menu_bar ul li:hover .drop_down ul li a:hover
+{
+
+    color: #2faee0;
+}
