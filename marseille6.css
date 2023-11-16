@@ -1,0 +1,20 @@
+h3{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+    padding: 6%;
+}   
+form{
+    background-color: rgba(173, 199, 231, 0.237);
+    text-align: left;
+    font-size: large;
+}
+.boutons{
+    height: 25px;
+    display: flex;
+    margin: 1.5%;
+    display: inline-block;   
+}
+.objet{
+    text-align: center ;
+}
