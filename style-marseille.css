@@ -1,0 +1,13 @@
+/* style section princpale dans le main*/*
+main section#section_principal
+{
+display: block;
+position: relative;
+}
+
+section#section_principal div.une
+{
+    display: flex;
+    flex-direction: row;
+
+}
