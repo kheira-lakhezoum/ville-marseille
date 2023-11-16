@@ -5,9 +5,85 @@ display: block;
 position: relative;
 }
 
+div#a_la_une
+{
+    display: block; 
+    position: relative; 
+    border: solid; 
+    text-align: center; 
+    padding: 1%; 
+}
+
+section#section_principal h2
+{
+display: inline;
+left: 50%;
+border: solid;
+}
+div.une a
+{
+    text-decoration: none;
+    color: black;
+}
+
 section#section_principal div.une
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
+}
+.container_flex_deux_colonnes_avec_image
+{
+    display: flex;
+    width: 100%;  
+}
+
+.container_flex_deux_colonnes_avec_image .colonne 
+{
+    flex: 1;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+
+}
+
+.container_flex_deux_colonnes_avec_image .image-container 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 55vh;
+    min-height: 100px;
+    text-align: center;
+}
+
+.image-wrapper 
+{
+    text-align: center;
+}
+
+.container_flex_deux_colonnes_avec_image .image-container .image 
+{
+    max-width: 100%;
+    height: auto;
+    min-height: 400px;
+    max-height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.overflow_image
+{
+    max-height: 400px ;
+    overflow: hidden;
+    border-radius: 16px;
+
+}
+
+.image:hover
+{
+  scale: 1.2;
+  transition: 0.2s;
+}
+
+.retour_flex_row
+{
+    flex-direction: row;
 }
