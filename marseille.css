@@ -11,10 +11,61 @@ body
     background: url();
     background-size: cover;
 }
+#background_video 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+header
+
+{
+
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 82.5vh;
+}
+header h1
+{
+    position: absolute;
+    bottom: 5%;
+    margin: 5%;
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+}
+.home_suite_du_titre
+{
+position: relative;
+display: block;
+padding-left: 40%;
+
+}
+.home_suite_du_titre h1
+{
+    
+    font-size: 4rem;
+    font-weight: 800;
+}
+main
+  {
+    position: relative;
+    display: block;
+  }
+
+/* début du menu dropdown */
 .menu_bar
 {
     background: #0a6daa;
     text-align: left;
+    border-radius: 0px 16px 16px 0px;
 }
 .menu_bar ul
 {
@@ -28,8 +79,9 @@ body
 
     width: 130px;
     padding: 15px;
-    margin: 15px;
-    text-align: center
+    margin: 0px;
+    text-align: center;
+    border-radius: 16px;
 }
 .menu_bar ul li a 
 {
@@ -62,7 +114,7 @@ body
 {
     display: block;
     position: absolute;
-    border-radius: 0;
+    border-radius: 0 16px 16px 0;
     margin-left: -15px;
     margin-top: 15px;
     background: #0a6daa;
@@ -91,3 +143,72 @@ body
 
     color: #2faee0;
 }
+/* fin du menu dropdown */
+
+/*en test debut du footer*/
+
+.Petitlogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+.logoville{
+    background-color: rgba(52, 154, 222, 0.404);
+    margin-top: 10%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(7, 75, 117, 0.591);
+}
+.reseauxsociaux {
+    margin-top: 2%;
+}
+.LogoFB {
+    padding: 10%;
+
+}
+.LogoTWT {
+    padding: 10%;
+
+}
+.LogoINST{
+    padding: 10%;
+}
+.LogoLKD{
+    padding: 10%;
+}
+.Hôteldeville{
+    padding: 10%;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.htvempl{
+    font-style: italic;
+}
+.contact{  
+    padding: 2%;
+    text-align: center;
+}
+.Sitesassociés{
+    padding: 10%;
+    background-color: rgb(236, 241, 246);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.sites {
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
+    background-color: rgb(179, 216, 240);
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(24, 153, 233);
+}
+/* fin du footer*/
+
