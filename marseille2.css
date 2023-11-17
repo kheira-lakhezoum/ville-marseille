@@ -7,6 +7,7 @@ footer{
     background-color: rgb(255, 255, 255);
 }
 .imgmusée {
+    border-radius: 16px 0px 16px 0px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -15,6 +16,7 @@ footer{
     height: auto;
 }
 .content {
+    border-radius: 66px 6px 66px 6px;
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
