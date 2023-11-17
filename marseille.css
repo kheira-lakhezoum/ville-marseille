@@ -6,11 +6,7 @@
     box-sizing: border-box;
     font-family: 'Poppins';
 }
-body
-{
-    background: url();
-    background-size: cover;
-}
+
 #background_video 
 {
     height: 100%;
@@ -39,7 +35,7 @@ header h1
     bottom: 5%;
     margin: 5%;
     font-size: 4rem;
-    font-weight: 800;
+    font-weight: 900;
     color: white;
     z-index: -1;
 }
@@ -54,7 +50,7 @@ text-align: center;
 {
     
     font-size: 4rem;
-    font-weight: 800;
+    font-weight: 900;
 }
 /* fin du style du titre*/
 main /* !!!à changer mettre une classe !!!*/
