@@ -1,0 +1,132 @@
+*
+{
+    text-align: center;
+
+}
+html
+{
+    /* L'image est positionnée en fond et est centrée */
+    background-image: url(ressources/img/fond_marseille4.jpg);
+    /* Ajout de la propriété avec les préfixes pour tous les moteurs de rendu */
+    background-size: cover;
+    background-attachment: fixed;
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+
+body
+{
+    flex-direction: column;
+}
+section
+{
+    width: 80%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+}
+
+h1#plage
+{
+    margin-top: 2%;
+    display:inline-flex;
+}
+p, a
+{
+    font-size: 1.3em;
+    text-decoration: none;
+    color: black;
+}
+ul{
+    list-style: none;
+}
+
+.glass_effect
+{
+background: rgba(47, 174, 224, 0.39);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.9px);
+-webkit-backdrop-filter: blur(2.9px);
+/* From https://css.glass */
+background: rgba(47, 174, 224, 0.39);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.9px);
+-webkit-backdrop-filter: blur(2.9px);
+
+}
+
+
+.container_flex_deux_colonnes
+{
+    display: flex;
+    width: 100%;  
+}
+
+.container_flex_deux_colonnes .colonne 
+{
+    flex: 1;
+    box-sizing: border-box;
+}
+
+
+/*-----Pop-up-----*/
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(255, 255, 255);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: linear-gradient(20deg, #99D4C0, #DBD46A);
+    border-radius: 5px;
+    width: 40%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    max-height: 30%;
+    overflow: auto;
+}
+/*--------fin du pop-up--------*/
