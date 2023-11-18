@@ -30,6 +30,8 @@ footer{
     background: radial-gradient(circle, rgba(122,107,64,1) 0%, rgba(221,186,112,1) 35%, rgba(248,211,121,1) 50%, rgba(248,235,180,1) 83%, rgba(154,129,94,1) 100%, rgba(73,64,36,1) 100%);
 }
 .Description{
+    border-radius: 16px 0px 16px 0px;
+    text-align: center;
     background-color: rgb(223, 194, 128);
     font-style: italic;
     display: block;
@@ -45,6 +47,7 @@ footer{
     color: black;
 }
 h1 {
+    border-radius: 16px 0px 16px 0px;
     background: rgb(122,107,64);
     background: radial-gradient(circle, rgba(122,107,64,1) 0%, rgba(221,186,112,1) 35%, rgba(248,211,121,1) 50%, rgba(248,235,180,1) 83%, rgba(154,129,94,1) 100%, rgba(73,64,36,1) 100%);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
