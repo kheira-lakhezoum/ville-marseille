@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../ville-marseille/marseille.css">
+    <link rel="stylesheet" href="../ville-marseille/marseille6.css">
+</head>
+<body>
+    <header>
+        <div id="home"><!--____une video en fond ___-->
+            <video id="background_video" src="ressources/vid/MARSEILLE 2023 🇫🇷 Drone Aerial 4K.mp4" autoplay loop muted></video>
+        </div><!--____ fin de la partie avec une video en fond___-->
+        <nav>
+            <div class="menu_bar">
+                <ul>
+                    <li><a href="#">Menu</a>
+                        <div class="drop_down">
+
+                            <ul>
+                                <li><a class="active" href="marseille.html">Accueil</a></li>
+                                <li><a href="marseille1.html">Histoire</a></li>
+                                <li><a href="marseille2.html">Musées</a></li>
+                                <li><a href="marseille3.html">Randonnées</a></li>
+                                <li><a href="marseille4.html">Plages</a></li>
+                                <li><a href="marseille5.html">Parcs</a></li>
+                                <li><a href="marseille6.html">Contact</a></li>
+                            </ul>
+                        </div>
+
+                    </li>   
+                
+                </ul>
+               
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h3>Formulaire de contact</h3>
+            <form method="get" action="">
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" placeholder="Votre nom"><br><br>
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" placeholder="Votre prénom"><br><br>
+                <label for="email">Email :</label>
+                <input type="email" name="email" placeholder="Votre email"><br>
+                <br><label for="tel">Téléphone :</label>
+                <input type="tel" name="tel" placeholder="Votre téléphone"><br>
+                <br><label for="objet">Objet :</label>
+                <input type="text" name="objet" placeholder="Objet"><br>
+                <br><label for="message">Message :</label>
+                <textarea name="message" placeholder="Votre message" rows="10" cols="80"></textarea><br>
+                <div class="boutons">
+                <br><input type="submit" value="Envoyer"></div>
+                <div class="boutons">
+                <input type="reset" value="Annuler"></div>
+                <div class="boutons">
+                <input type="button" value="Retour"></div>
+                <div class="boutons">
+                <input type="button" value="Imprimer"></div>
+                <div class="boutons">
+                <input type="button" value="Partager"></div>
+            </form>
+    </main>
+    <!--Pied de page-->
+    <footer>
+        <!--Section 1 : Logo de la ville et liens Réseaux sociaux-->
+        <section class="logoville">
+            <a href="../ville-marseille/marseille.html"><img class="Petitlogo" src="../ville-marseille/images/logoville.png" title="Marseille" alt="Marseille"></a>
+        </section>
+        <div class="reseauxsociaux">
+            <ul>
+                <a href="https://fr-fr.facebook.com/marseilleville/"><img class="LogoFB" src="../ville-marseille/images/logoFB.png" alt="Facebook"></a>
+                <a href="https://twitter.com/Villemarseille"><img class="LogoTWT" src="../ville-marseille/images/logoTWT.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/villemarseille/"><img class="LogoINST" src="../ville-marseille/images/logoINST.png" alt="Instagram"></a>
+                <a href="https://fr.linkedin.com/company/ville-de-marseille"><img class="LogoLKD" src="../ville-marseille/images/logoLKD.jpg" alt="Linkedin"></a>
+            </ul>  
+        </div>
+        <!--Section 2 : Liens et contacts Hôtel de ville--> 
+        <section class="Hôteldeville">
+            <h3>Hôtel de ville</h3>
+            <p class="htvempl">Place Villeneuve de Bargemon<br>13002 Marseille</p></section>
+            <div class="contact">
+            <a href="https://www.marseille.fr/mairie/services-de-proximit%C3%A9/all%C3%B4-mairie"><img class="logotel" src="../ville-marseille/images/logotel.png" alt="" title="">04 91 55 11 11</a></div>
+            <div class="contact">
+            <a href="https://www.marseille.fr/mairie/services-de-proximite/nous-ecrire"><img class="logoenveloppe" src="../ville-marseille/images/logoenveloppe.png" alt="" title="">Nous écrire</a></div>
+            <div class="contact">
+            <a href="mailto: webmestre@marseille.fr" ><img class="logomail" src="../ville-marseille/images/logomail.png" alt="" title="">Nous contacter</a></div>
+            <div class="contact">
+            <a href="https://app.acce-o.fr/client/marseille"><img class="logoaccessibilité" src="../ville-marseille/images/logoaccessibilité.png" alt="" title="">Accessibilité</a></div>
+        <!--Section 3 : Liens vers sites associés-->
+        <section class="Sitesassociés">
+            <div class="sites">
+            <a href="https://www.marseille.fr/">Site officiel de la Ville de Marseille</a></div>
+            <div class="sites">
+            <a href="https://www.rtm.fr/carte-transport">RTM</a></div>
+            <div class="sites">
+            <a href="https://www.marseille-tourisme.com/">Office du tourisme</a></section></div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body
+{
+    background: url();
+    background-size: cover;
+}
+#background_video 
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+header
+
+{
+
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 82.5vh;
+}
+header h1
+{
+    position: absolute;
+    bottom: 5%;
+    margin: 5%;
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+}
+.home_suite_du_titre
+{
+position: relative;
+display: block;
+padding-left: 40%;
+
+}
+.home_suite_du_titre h1
+{
+    
+    font-size: 4rem;
+    font-weight: 800;
+}
+main
+  {
+    position: relative;
+    display: block;
+  }
+
+/* début du menu dropdown */
+.menu_bar
+{
+    background: #0a6daa;
+    text-align: left;
+    border-radius: 0px 16px 16px 0px;
+}
+.menu_bar ul
+{
+
+    position: relative;
+    list-style: none ;
+
+}
+.menu_bar ul li
+{
+
+    width: 130px;
+    padding: 15px;
+    margin: 0px;
+    text-align: center;
+    border-radius: 16px;
+}
+.menu_bar ul li a 
+{
+
+    color: white;
+    text-decoration: none;
+}
+.active, .menu_bar ul li:hover
+{
+
+    background: #2faee0;
+    border-radius: 5px;
+}
+.background_patrimoine
+{
+    background: #d8956a;
+
+}
+.background_environnement
+{
+
+    background: #37392e;
+}
+.drop_down
+{
+
+    display: none;
+}
+.menu_bar ul li:hover .drop_down
+{
+    display: block;
+    position: absolute;
+    border-radius: 0 16px 16px 0;
+    margin-left: -15px;
+    margin-top: 15px;
+    background: #0a6daa;
+
+}
+.menu_bar ul li:hover .drop_down ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu_bar ul li:hover .drop_down ul li
+{
+    width: 160px;
+    padding: 10px;
+    border-bottom: 1px dotted #2faee0;
+    border-radius: 0;
+    text-align: left;
+}
+.menu_bar ul li:hover .drop_down ul li:last-child
+{
+
+    border-bottom: none;
+}
+.menu_bar ul li:hover .drop_down ul li a:hover
+{
+
+    color: #2faee0;
+}
+/* fin du menu dropdown */
+
+/*debut du footer*/
+footer{
+    background-color: rgb(255, 255, 255);
+}
+.Petitlogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+.logoville{
+    background-color: rgba(52, 154, 222, 0.404);
+    margin-top: 10%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgba(7, 75, 117, 0.591);
+}
+.reseauxsociaux {
+    margin-top: 3%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #a5d6e94f;
+}
+.LogoFB {
+    width: 10%;
+    height: 10%;
+    margin: 5%;
+
+}
+.LogoTWT {
+    width: 10%;
+    height: 10%;
+    margin: 5%;
+
+}
+.LogoINST{
+    width: 10%;
+    height: 10%;
+    margin: 5%;
+}
+.LogoLKD{
+    width: 10%;
+    height: 10%;
+    margin: 5%;
+}
+.Hôteldeville{
+    padding: 5%;
+    font-size: xx-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+.htvempl{
+    font-style: italic;
+}
+.contact{  
+    background-color: rgb(255, 255, 255);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    margin-bottom: 5%;
+
+}
+.Sitesassociés{
+    border-radius: 66px 0px 66px 0px;
+    padding: 1%;
+    background-color: rgb(236, 241, 246);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+}
+.sites {
+    display: block;
+    border-radius: 16px 0px 16px 0px;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 5%;
+    background-color: rgb(179, 216, 240);
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(24, 153, 233);
+}
+/* fin du footer*/
