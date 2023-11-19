@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*généralité*/
+h2,h3,h4, main {
+    display: block;
+    text-align: left;
+}
+h2{
+    font-weight: 900;
+    font-size: large;
+    font-size: 1.6em;
+}
+.text-field {
+    padding: 20px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.main-background {
+    background: url(ressources/img/fondmarseille3.JPG) center;
+    background-size: cover;
+}
+.block-center{
+    display: block;
+    text-align: center;
+}
+
+.button{
+    display: block;
+    background: #0a6daa;
+    width: fit-content;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+    /*introduction*/
+
+    .article{
+        display: flex;
+        justify-content: center;
+    }
+
+    /*randonnées dans les calanques*/
