@@ -20,7 +20,7 @@ h2{
     text-align: center;
     margin: auto;
     margin-top: 20px;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.336);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
@@ -37,6 +37,11 @@ h2{
     text-align: center;
 }
 
+.link{
+    text-decoration: none;
+    color: #0a6daa;
+
+}
 .button{
     display: block;
     background: #0a6daa;
@@ -49,11 +54,9 @@ h2{
     margin-top: 20px;
 }
 
-    /*introduction*/
 
-    .article{
-        display: flex;
-        justify-content: center;
-    }
+.article{
+    display: flex;
+    justify-content: center;
+}
 
-    /*randonnées dans les calanques*/
