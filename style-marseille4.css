@@ -43,6 +43,7 @@ p, a
 }
 ul{
     list-style: none;
+    margin: 2%;
 }
 
 .glass_effect
@@ -58,6 +59,7 @@ border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(2.9px);
 -webkit-backdrop-filter: blur(2.9px);
+padding: 1%;
 
 }
 
@@ -79,25 +81,26 @@ backdrop-filter: blur(2.9px);
 .overlay {
     position: fixed;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
-    background: rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.363);
     transition: opacity 500ms;
     visibility: hidden;
     opacity: 0;
-    
+    width: 0;
+    height: 0;
 }
 
 .overlay:target {
     visibility: visible;
     opacity: 1;
+    width: 100%;
+    height: 100%;
 }
 
 .popup {
     margin: 70px auto;
     padding: 20px;
-    background: linear-gradient(20deg, #99D4C0, #DBD46A);
+    background: linear-gradient(20deg, #0a6daa, rgb(179, 211, 211));
     border-radius: 5px;
     width: 40%;
     position: relative;
@@ -128,5 +131,17 @@ backdrop-filter: blur(2.9px);
 .popup .content {
     max-height: 30%;
     overflow: auto;
+}
+
+
+#container_overlay{
+display: none;
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+margin: 0;
+z-index: -1;
+
 }
 /*--------fin du pop-up--------*/
