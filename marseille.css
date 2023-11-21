@@ -75,12 +75,11 @@ main /* !!!à changer mettre une classe !!!*/
 }
 .menu_bar ul li
 {
-
-    width: 130px;
-    padding: 15px;
-    margin: 0px;
-    text-align: center;
-    border-radius: 16px;
+width: 130px;
+padding: 15px;
+margin: 0px;
+text-align: center;
+border-radius: 16px;
 }
 .menu_bar ul li a 
 {
@@ -145,9 +144,10 @@ main /* !!!à changer mettre une classe !!!*/
 /* fin du menu dropdown */
 
 
-
-/*en test debut du footer*/
-
+/*debut du footer*/
+footer{
+    background-color: rgb(255, 255, 255);
+}
 .Petitlogo{
     display: block;
     margin-left: auto;
@@ -162,24 +162,37 @@ main /* !!!à changer mettre une classe !!!*/
     border-color: rgba(7, 75, 117, 0.591);
 }
 .reseauxsociaux {
-    margin-top: 2%;
+    margin-top: 3%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #a5d6e94f;
 }
 .LogoFB {
-    padding: 10%;
+    width: 10%;
+    height: 10%;
+    margin: 5%;
 
 }
 .LogoTWT {
-    padding: 10%;
+    width: 10%;
+    height: 10%;
+    margin: 5%;
 
 }
 .LogoINST{
-    padding: 10%;
+    width: 10%;
+    height: 10%;
+    margin: 5%;
 }
 .LogoLKD{
-    padding: 10%;
+    width: 10%;
+    height: 10%;
+    margin: 5%;
 }
 .Hôteldeville{
-    padding: 10%;
+    padding: 5%;
     font-size: xx-large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
@@ -188,18 +201,27 @@ main /* !!!à changer mettre une classe !!!*/
     font-style: italic;
 }
 .contact{  
-    padding: 2%;
-    text-align: center;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    margin-bottom: 5%;
+
 }
 .Sitesassociés{
-    padding: 10%;
+    border-radius: 66px 0px 66px 0px;
+    padding: 1%;
     background-color: rgb(236, 241, 246);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
+    width: 50%;
+    height: 50%;
 }
 .sites {
+    display: block;
+    border-radius: 16px 0px 16px 0px;
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;

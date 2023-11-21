@@ -35,7 +35,7 @@ h1#plage
     margin-top: 2%;
     display:inline-flex;
 }
-p, a
+main p, main a
 {
     font-size: 1.3em;
     text-decoration: none;
